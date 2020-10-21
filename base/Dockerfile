@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubuntu
 LABEL maintainer="tivotyro@gmail.com"
 
 WORKDIR /app/
