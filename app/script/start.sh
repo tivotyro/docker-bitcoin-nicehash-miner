@@ -14,7 +14,7 @@ fi
 
 if [ -z $BTC_ADDR ]; then
     echo "\$BTC_ADDR not found.... Default to dev address. Thank!"
-    BTC_ADDR=38Ma3FXoE8dFewWAASskBaQr5xye86ym1p
+    BTC_ADDR=3Duib3SQEemtBMp5htosunxUEb3BCgonog
 fi
 
 if [ -z $WORKER_NAME ]; then
