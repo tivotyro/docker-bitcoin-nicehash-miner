@@ -1,7 +1,7 @@
-FROM first087/bitcoin-nicehash-miner:nheqminer as builder
+FROM tivotyro/bitcoin-nicehash-miner:nheqminer as builder
 
-FROM first087/bitcoin-nicehash-miner:base
-LABEL maintainer="first087@gmail.com"
+FROM tivotyro/bitcoin-nicehash-miner:base
+LABEL maintainer="tivotyro@gmail.com"
 
 WORKDIR /app/
 
