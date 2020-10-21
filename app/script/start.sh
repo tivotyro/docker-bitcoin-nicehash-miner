@@ -8,8 +8,8 @@ echo "*                                                            *"
 echo "**************************************************************"
 
 if [ -z $NH_REGION ]; then
-    echo "\$NH_REGION not found... Default to hk."
-    NH_REGION=hk
+    echo "\$NH_REGION not found... Default to usa."
+    NH_REGION=usa
 fi
 
 if [ -z $BTC_ADDR ]; then
