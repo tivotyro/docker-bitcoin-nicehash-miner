@@ -8,3 +8,10 @@ RUN cd nheqminer/cpu_xenoncat/Linux/asm/ \
     && cd ../../../Linux_cmake/nheqminer_cpu \
     && cmake . \
     && make -j $(nproc)
+
+RUN cd nheqminer/Linux_cmake/nheqminer_cuda_tromp \
+    && grep -v compute_20 CMakeLists.txt > CMakeLists2.txt \
+    && mv CMakeLists.txt CMakeLists.txt.old \
+    && mv CMakeLists2.txt CMakeLists.txt \
+    && cmake . \
+    && make -j $(nproc)
