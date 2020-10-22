@@ -3,5 +3,7 @@ LABEL maintainer="tivotyro@gmail.com"
 
 WORKDIR /app/
 
-RUN apt-get update -qy \
-    && apt-get install -qy cmake build-essential libboost-all-dev git ca-certificates --no-install-recommends
+ENV DEBIAN_FRONTEND=noninteractive 
+
+RUN apt-get -qq update && \
+    apt-get install -qq cmake build-essential libboost-all-dev git ca-certificates iputils-ping vim --no-install-recommends < /dev/null > /dev/null
